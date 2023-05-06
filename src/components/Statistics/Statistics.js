@@ -12,7 +12,8 @@ export const Statistics = ({
   return (
     <>
       <h2 className={css.statistic__title}>Statistics</h2>
-      {total === 0 ? (<Notification message="There is no feedback yet"/>
+      {total === 0 ? (
+        <Notification message="There is no feedback yet" />
       ) : (
         <ul className={css.statistics__list}>
           <li>
