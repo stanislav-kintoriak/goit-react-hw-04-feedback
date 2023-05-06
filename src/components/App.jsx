@@ -35,7 +35,7 @@ export class App extends Component {
           FeedbackOptions={
             <FeedbackOptions
               options={['good', 'neutral', 'bad']}
-              clickFeedback={this.feedbackBtnClick}
+              onLeaveFeedback={this.feedbackBtnClick}
             />
           }
           Statistics={

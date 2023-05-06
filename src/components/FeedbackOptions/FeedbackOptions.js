@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
-export const FeedbackOptions = ({ options, clickFeedback }) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div className={css.button__section}>
       {options.map(option => {
@@ -11,7 +11,7 @@ export const FeedbackOptions = ({ options, clickFeedback }) => {
             type="button"
             key={option}
             onClick={() => {
-              clickFeedback(option);
+              onLeaveFeedback(option);
             }}
           >
             {option}
