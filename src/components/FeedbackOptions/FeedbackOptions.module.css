@@ -1,0 +1,22 @@
+.buttons_section {
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #0a9331;
+  background-color: #92b29b;
+  border: 3px solid #0a9331;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  color: #0a9331;
+  background-color: #e7efe8;
+  border: 3px solid #0a9331;
+}

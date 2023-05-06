@@ -1,0 +1,19 @@
+.statistic__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.statistics__list p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.statistics__list span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
