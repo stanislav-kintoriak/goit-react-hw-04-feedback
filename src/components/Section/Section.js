@@ -15,6 +15,5 @@ export const Section = ({ title, children }) => {
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
-  FeedbackOptions: PropTypes.element.isRequired,
-  Statistics: PropTypes.element.isRequired,
+  children: PropTypes.element.isRequired,
 };
