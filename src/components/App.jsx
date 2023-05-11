@@ -34,7 +34,7 @@ export class App extends Component {
           title="Please leave your feedback"
           FeedbackOptions={
             <FeedbackOptions
-              options={['good', 'neutral', 'bad']}
+              options={Object.keys(this.state)}
               onLeaveFeedback={this.feedbackBtnClick}
             />
           }
