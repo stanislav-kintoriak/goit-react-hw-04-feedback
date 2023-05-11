@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
-import { Notification } from './Notification/Notification';
 
 export const Statistics = ({
   good,
@@ -10,11 +9,6 @@ export const Statistics = ({
   positivePercentage,
 }) => {
   return (
-    <>
-      <h2 className={css.statistic__title}>Statistics</h2>
-      {total === 0 ? (
-        <Notification message="There is no feedback yet" />
-      ) : (
         <ul className={css.statistics__list}>
           <li>
             <p>
@@ -49,9 +43,6 @@ export const Statistics = ({
           </li>
         </ul>
       )}
-    </>
-  );
-};
 
 Statistics.propTypes = {
   good: PropTypes.number.isRequired,

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Statistics } from './Statistics/Statistics';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Section } from './Section/Section';
+import { Notification } from './Statistics/Notification/Notification';
 
 export class App extends Component {
   state = {
@@ -28,17 +29,20 @@ export class App extends Component {
   }
 
   render() {
+    const totalFeedback = this.countTotalFeedback()
     return (
       <>
         <Section
-          title="Please leave your feedback"
-          FeedbackOptions={
+          title="Please leave your feedback">
             <FeedbackOptions
               options={Object.keys(this.state)}
               onLeaveFeedback={this.feedbackBtnClick}
             />
-          }
-          Statistics={
+          </Section>
+          <Section title="Statistics">
+          {totalFeedback === 0 ? (
+            <Notification message="There is no feedback yet" />
+          ) : (
             <Statistics
               good={this.state.good}
               neutral={this.state.neutral}
@@ -46,9 +50,9 @@ export class App extends Component {
               total={this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
-          }
-        />
-      </>
+            )}
+            </Section>
+          </>
     );
   }
 }
