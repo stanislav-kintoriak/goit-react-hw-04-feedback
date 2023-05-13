@@ -56,7 +56,3 @@ export class App extends Component {
     );
   }
 }
-
-App.propTypes = {
-  step: PropTypes.number.isRequired,
-};
