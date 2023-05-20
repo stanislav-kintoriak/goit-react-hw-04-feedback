@@ -17,7 +17,7 @@ const [stateObj,updateState] = useReducer(reducer,
   })
 
 
-// Need fix click on "bad" button
+
 
 
 
